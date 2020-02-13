@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+}
+
+nav {
+    height: 70%;
+    width: auto;
+    background-color: #1a75bc;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    font-size: 14px;
+    color: white;
+}
+
+.hamburger {
+position: absolute;
+top: 20px;
+right: 25px;
+}
