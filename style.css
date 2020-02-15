@@ -32,7 +32,7 @@ nav {
   font-weight: bold;
 }
 
-h2 {
+.titulo-pagina {
   color: #1a75bc;
 }
 
@@ -64,4 +64,153 @@ p {
   justify-content: center;
   margin: 15px 60px 20px 0px;
   padding: 0 0 20px 0;
+}
+
+
+#cuadricula {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  margin: 8px 15px;
+  padding: 0 15px;
+  font-size: 10px;
+
+}
+
+.img-gatitos {
+  width: 100%;
+  height: auto;
+}
+
+.imagen-cards {
+  margin: 0;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.texto-cards {
+  background-color: #1a75bc;
+  margin: 0;
+  width: 200px;
+  height: 200px;
+  padding: 0 10px;
+  color: white;
+  font-size: 12px;
+}
+
+
+
+
+button {
+  position: relative;
+  top: 30px;
+  background-color: #1a75bc;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 8px 8px;
+
+}
+
+footer {
+  background-color: #fed201;
+  height: 100px;
+  margin-top: 20px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.iconos {
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  top: 40px;
+
+}
+
+.derechosReservados {
+  text-align: center;
+  position: relative;
+  top: 40px;
+}
+
+.hover {
+  background-color: #fed201;
+  color: black;
+  margin: 0;
+  width: 200px;
+  height: 200px;
+  padding: 0 10px;
+  font-size: 12px;
+}
+
+.h2-hover {
+  color: #1a75bc;
+}
+
+.button-hover {
+  background-color: #fed201;
+  border: 0.5px solid #1a75bc;
+  color: #1a75bc;
+}
+
+.img-hover {
+  transform: scale(1.5);
+  transition: transform 1s;
+  overflow: hidden;
+}
+
+#modalContainer {
+  width: auto;
+  height: auto;
+  position: fixed;
+  top: 55px;
+  left: 300px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  width: 700px;
+  height: auto;
+  margin-bottom: 20%;
+  color: #1a75bc;
+  padding: 0px 10px;
+}
+
+
+#modalContainer img {
+  width: 50%;
+  height: auto;
+}
+
+#modalContainer h3 {
+  text-align: center;
+}
+
+.close {
+  color: white;
+  position: fixed;
+  top: 60px;
+  left: 950px;
+  color: #1a75bc;
+  font-size: 30px;
+
+}
+
+.fas .fa-window.close {
+  background-color: white;
+  width: 200px;
+  font-size: 40px;
+}
+
+.nomostrar {
+  display: none;
 }
