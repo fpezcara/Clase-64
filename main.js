@@ -1,3 +1,39 @@
+// Con disculpas por la tardanza, Flor, te mando mis observaciones. 
+// En primer lugar, me encantga tanto el diseño como el codigo realizado. Todo esta prolijo y bien hecho. 
+
+// Los problemas con el modal surgen porque estamos trabajando con el modal dentro de un for que recorre las tarjetas. 
+// Por cada tarjeta tenemos un boton que abre el modal, asi que eso esta perfecto: cuando decimos "button[i].onclick", 
+// cada button[i] corresponde a una tarjeta 
+// Pero al momento de cerrar el modal tenemos problemas porque tenemos un solo modal. Entonces cuando decimos 
+// "closeModal[i].onclick", si hacemos clic por ej en la segunda tarjeta, la i del for es igual a 1. 
+// button[i] corresponde al boton de la segunda tarjeta, pero closeModal[i] no existe. Solo tenemos un solo closeModal. 
+// La solucion seria hacer que closeModal se refiera siempre a ese unico elemento. Por ejemplo, asi:
+// closeModal[0].onclick = () => {
+// El otro problema es que a tu modal se le agrega la clase "nomostrar", pero nunca se le quita esa clase para hacerlo
+// visible. Por eso no lo podemos ver una segunda vez. 
+// Inmediatamente despues del onclick, podriamos agregar esta linea: 
+//     modalContainer.classList.remove("nomostrar")
+
+// El codigo de la funcion del modal quedaria asi:
+
+  // button[i].onclick = () => {
+  //   modalContainer.classList.remove("nomostrar")
+  //   modalContainer.innerHTML = `
+  //   <h3 class="h3-modal">${gatos[i].name}</h3>
+  //   <img src="${gatos[i].img}" alt="gatitos varios"></img>
+  //   <p class="longDescr">${gatos[i].longDesc}</p>
+  //   <div class="close"><i class="fas fa-window-close"></i></div>
+  //     `;
+  //   const closeModal = document.getElementsByClassName("close")
+
+  //   closeModal[0].onclick = () => {
+  //      modalContainer.classList.add("nomostrar")
+  //   }
+  // }
+
+// Con eso ya deberia funcionar
+// Excelente trabajo!
+
 const gatos = [
   {
     name: "Rodolfo",
